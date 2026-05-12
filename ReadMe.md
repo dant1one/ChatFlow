@@ -155,7 +155,7 @@ cd ~yourpath/Chat; docker-compose up -d
 ## Live Website
 
 ```text
-ec2-54-165-72-221.compute-1.amazonaws.com
+https://54.165.72.221:8080
 ```
 
 ## Deployment Platform
