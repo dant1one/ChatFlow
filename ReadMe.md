@@ -175,7 +175,7 @@ https://github.com/dant1one/ChatFlow
 ## YouTube Link
 
 ```text
-https://youtube.com/your-demo-video
+https://youtu.be/StI503MXXXk
 ```
 
 ---
@@ -184,15 +184,15 @@ https://youtube.com/your-demo-video
 
 ## Login/Registration
 
-Add screenshot here.
+![alt text](<Screenshot from 2026-05-12 16-26-47.png>)
 
 ## Home Page
 
-Add screenshot here.
+![alt text](<Screenshot from 2026-05-12 16-27-14.png>)
 
 ## Chat Window
 
-Add screenshot here.
+![alt text](<Screenshot from 2026-05-12 16-27-23.png>)
 
 ---
 
