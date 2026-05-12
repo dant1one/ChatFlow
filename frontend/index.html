@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatFlow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="auth-view" class="auth-shell">
+      <div class="auth-card">
+        <h1>ChatFlow</h1>
+        <p>Register or login to start real-time conversations.</p>
+        <div class="auth-tabs">
+          <button id="tab-login" class="tab active">Login</button>
+          <button id="tab-register" class="tab">Register</button>
+        </div>
+        <input id="auth-username" placeholder="Username" />
+        <input id="auth-password" type="password" placeholder="Password" />
+        <button id="auth-submit">Login</button>
+        <div id="auth-error" class="error hidden"></div>
+      </div>
+    </div>
+
+    <div id="chat-view" class="app-shell hidden">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <h1>ChatFlow</h1>
+          <div class="top-actions">
+            <button id="theme-toggle-btn" class="ghost-btn">Theme</button>
+            <button id="logout-btn" class="ghost-btn">Logout</button>
+          </div>
+        </div>
+        <div class="meta" id="me-label"></div>
+        <input id="search-users-input" placeholder="Search users or groups..." />
+        <div class="row-actions">
+          <input id="new-group-name-input" placeholder="New group name..." />
+          <button id="create-group-btn">Create</button>
+        </div>
+        
+        <div id="invites-panel" class="group">
+          <button class="group-header" id="invites-header">
+            <span>Pending Invites</span>
+            <span id="invites-count">0</span>
+          </button>
+          <ul id="invites-list" class="group-list"></ul>
+        </div>
+        <div id="users-loading" class="meta">Loading users...</div>
+        <div id="users-error" class="error hidden"></div>
+        <div id="users-groups"></div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <h2 id="chat-title">Select a user to start chatting</h2>
+          <div id="chat-subtitle" class="meta"></div>
+          <div id="group-invite-box" class="row-actions hidden">
+            <input id="group-invite-username-input" placeholder="Invite by username..." />
+            <button id="group-invite-btn">Invite</button>
+          </div>
+          <input id="search-messages-input" placeholder="Search messages in conversation..." />
+        </header>
+        <div id="messages-error" class="error hidden"></div>
+        <div id="messages-loading" class="meta hidden">Loading messages...</div>
+        <div id="typing-indicator" class="meta hidden">Someone is typing...</div>
+        <div id="messages-list"></div>
+        <footer class="chat-composer">
+          <input id="message-input" placeholder="Type a message..." />
+          <button id="send-btn">Send</button>
+        </footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
