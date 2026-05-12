@@ -155,12 +155,12 @@ cd ~yourpath/Chat; docker-compose up -d
 ## Live Website
 
 ```text
-https://your-live-app-url.com
+ec2-54-165-72-221.compute-1.amazonaws.com
 ```
 
 ## Deployment Platform
 
-* PythonAnywhere
+* AWS
 
 ---
 
