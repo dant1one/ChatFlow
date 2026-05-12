@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.config import settings
-from app.database import Base, engine
-from app.routers import auth, groups, messages, users
-from app.websocket import router as websocket_router
+from .config import settings
+from .database import Base, engine
+from .routers import auth, groups, messages, users
+from .websocket import router as websocket_router
 
 app = FastAPI(title=settings.app_name, version="1.0.0")
 
